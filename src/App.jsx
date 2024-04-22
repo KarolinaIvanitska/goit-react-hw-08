@@ -3,9 +3,9 @@ import "./App.css";
 import ContactForm from "./components/ContactForm/ContactForm";
 import ContactList from "./components/ContactList/ContactList";
 import SearchBox from "./components/SearchBox/SearchBox";
-import { fetchContacts } from "./redux/contactsOps";
+import { fetchContacts } from "./redux/contacts/operations";
 import { useDispatch, useSelector } from "react-redux";
-import { selectIsLoading } from "./redux/contactsSlice";
+import { selectIsLoading } from "./redux/contacts/contactsSlice";
 
 function App() {
   const isLoading = useSelector(selectIsLoading);
