@@ -15,6 +15,8 @@ const NavBar = () => {
             Contacts
           </NavLink>
         </li>
+      </ul>
+      <ul className={css.list}>
         <li>
           <NavLink className={css.item} to="/login">
             Login
