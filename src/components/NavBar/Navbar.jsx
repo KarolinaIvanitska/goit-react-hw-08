@@ -3,8 +3,8 @@ import css from "./NavBar.module.css";
 
 const NavBar = () => {
   return (
-    <div className={css.NavBar}>
-      <div className={css.header}>
+    <div className={css.header}>
+      <ul className={css.list}>
         <li>
           <NavLink className={css.item} to="/">
             Home
@@ -15,7 +15,17 @@ const NavBar = () => {
             Contacts
           </NavLink>
         </li>
-      </div>
+        <li>
+          <NavLink className={css.item} to="/login">
+            Login
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={css.item} to="/register">
+            Register
+          </NavLink>
+        </li>
+      </ul>
     </div>
   );
 };

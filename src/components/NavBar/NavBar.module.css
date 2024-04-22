@@ -1,7 +1,5 @@
 .header {
   display: flex;
-  list-style: none;
-  gap: 20px;
   height: 70px;
   padding: 25px;
   align-items: center;
@@ -13,8 +11,13 @@
   border-radius: 6px;
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
 .item {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 30px;
   line-height: 1.5;
   font-weight: 600;
