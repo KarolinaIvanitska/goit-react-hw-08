@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import "./App.css";
-import { fetchContacts } from "./redux/contacts/operations";
 import { useDispatch } from "react-redux";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
@@ -11,11 +10,12 @@ import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { refreshThunk } from "./redux/auth/operations";
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchContacts());
+    dispatch(refreshThunk());
   }, [dispatch]);
   return (
     <>
