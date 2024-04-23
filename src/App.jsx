@@ -18,10 +18,13 @@ const Register = lazy(() => import("./pages/Register/Register"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 function App() {
   const dispatch = useDispatch();
+
   const isRefreshing = useSelector(selectIsRefresh);
+
   useEffect(() => {
     dispatch(refreshThunk());
   }, [dispatch]);
+
   return isRefreshing ? (
     <Loader />
   ) : (

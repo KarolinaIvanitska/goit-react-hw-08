@@ -45,6 +45,9 @@ const slice = createSlice({
       .addCase(refreshThunk.pending, (state) => {
         state.isRefreshing = true;
       })
+      .addCase(refreshThunk.rejected, (state) => {
+        state.isRefreshing = false;
+      })
       .addCase(refreshThunk.fulfilled, (state, { payload }) => {
         state.user.name = payload.name;
         state.user.email = payload.email;
