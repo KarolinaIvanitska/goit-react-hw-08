@@ -29,7 +29,7 @@ function App() {
     <Loader />
   ) : (
     <>
-      <Suspense fallback={null}>
+      <Suspense>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />

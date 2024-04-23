@@ -8,7 +8,7 @@ const PublicRoutes = ({ children }) => {
   if (!isLoggedIn) {
     return children;
   }
-  return <Navigate to={location.state.from || "/"} />;
+  return <Navigate to={location.state?.from || "/"} />;
 };
 
 export default PublicRoutes;
