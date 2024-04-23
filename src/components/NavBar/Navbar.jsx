@@ -6,6 +6,7 @@ import { logoutThunk } from "../../redux/auth/operations";
 
 const NavBar = () => {
   const dispatch = useDispatch();
+
   const user = useSelector(selectUser);
   const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
