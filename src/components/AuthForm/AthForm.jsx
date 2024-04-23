@@ -33,7 +33,7 @@ const AuthForm = ({ title, onSubmit, initialValues, type }) => {
             {title}
           </button>
           <p className={css.text}>
-            You{" "}
+            You
             {type === "register"
               ? "already have an account?"
               : "don't have an account?"}

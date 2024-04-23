@@ -22,3 +22,13 @@
   text-decoration: none;
   color: rgb(255, 255, 255) !important;
 }
+
+.btn {
+  font-size: 15px;
+  font-weight: 500px;
+  color: #1a0000;
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
